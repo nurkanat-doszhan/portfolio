@@ -10,7 +10,7 @@ const Projects = () => {
             <div className='cards_list'>
               <div className="card">
                 <div className="card_image">
-                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt='' />
                 </div>
                 <div className="card_title title-white">
                   <p>Card Title</p>
@@ -18,7 +18,7 @@ const Projects = () => {
               </div>
               <div className="card">
                 <div className="card_image">
-                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="" />
                 </div>
                 <div className="card_title title-white">
                   <p>Card Title</p>
@@ -26,7 +26,7 @@ const Projects = () => {
               </div>
               <div className="card">
                 <div className="card_image">
-                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="" />
                 </div>
                 <div className="card_title title-white">
                   <p>Card Title</p>
@@ -34,7 +34,7 @@ const Projects = () => {
               </div>
               <div className="card">
                 <div className="card_image">
-                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="" />
                 </div>
                 <div className="card_title title-white">
                   <p>Card Title</p>

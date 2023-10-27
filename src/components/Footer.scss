@@ -1,0 +1,33 @@
+footer {
+  margin-top: 20px;
+  padding: 30px 0;
+  background-color: #222;
+  color: #fff;
+  .col {
+    width: 33.3333%;
+  }
+  p {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+  a {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 20px;
+    transition: .2s;
+    &:hover {
+      color: #156F5B;
+    }
+    &.mail {
+      font-size: 15px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

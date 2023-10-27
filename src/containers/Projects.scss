@@ -1,50 +1,53 @@
-.cards_list {
-  z-index: 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  .card {
-    margin: 17px;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transition: 0.3s;
-    .card_image {
-      width: inherit;
-      height: inherit;
-      img {
+.projects {
+  padding: 50px 0;
+  .cards_list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .card {
+      margin: 17px;
+      width: 250px;
+      height: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+      cursor: pointer;
+      transition: 0.3s;
+      .card_image {
         width: inherit;
         height: inherit;
-        object-fit: cover;
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+        }
       }
-    }
-    .card_title {
-      text-align: center;
-      border-radius: 0px 0px 40px 40px;
-      font-weight: 300;
-      font-size: 30px;
-      margin-top: -80px;
-      transition: 0.3s;
-      height: 40px;
-    }
-    &:hover {
-      box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-        -5px -5px 30px 15px rgba(0,0,0,0.22);
       .card_title {
-        margin-top: -90px;
+        text-align: center;
+        border-radius: 0px 0px 40px 40px;
+        font-weight: 300;
+        font-size: 30px;
+        margin-top: -80px;
+        transition: 0.3s;
+        height: 40px;
+      }
+      &:hover {
+        box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+          -5px -5px 30px 15px rgba(0,0,0,0.22);
+        .card_title {
+          margin-top: -90px;
+        }
       }
     }
   }
-}
 
-.title-white {
-  color: white;
-}
+  .title-white {
+    color: white;
+  }
 
-.title-black {
-  color: black;
+  .title-black {
+    color: black;
+  }
 }
