@@ -1,7 +1,36 @@
 import './Stayintouch.scss'
 import toast, { Toaster } from 'react-hot-toast';
+// const myPromise = fetchData();
 
-const notify = () => toast('Here is your toast.');
+// toast.promise(myPromise, {
+//   loading: 'Loading',
+//   success: 'Got the data',
+//   error: 'Error when fetching',
+// });
+
+const notify = () => toast('Hello World', {
+  duration: 4000,
+  position: 'bottom-center',
+
+  // Styling
+  style: {},
+  className: '',
+
+  // Custom Icon
+  icon: '👏',
+
+  // Change colors of success/error/loading icon
+  iconTheme: {
+    primary: '#000',
+    secondary: '#fff',
+  },
+
+  // Aria
+  ariaProps: {
+    role: 'status',
+    'aria-live': 'polite',
+  },
+});
 
 const Stayintouch = () => {
   return (
