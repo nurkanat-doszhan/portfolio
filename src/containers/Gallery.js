@@ -4,10 +4,10 @@ import './Gallery.scss'
 
 const Gallery = () => {
   const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
     slides: {
       perView: 3,
       spacing: 30,
-      loop: true
     }
   })
   return (

@@ -1,4 +1,7 @@
 import './Stayintouch.scss'
+import toast, { Toaster } from 'react-hot-toast';
+
+const notify = () => toast('Here is your toast.');
 
 const Stayintouch = () => {
   return (
@@ -9,7 +12,8 @@ const Stayintouch = () => {
         <div className="inner">
           <div className="col">
             <input type="text" placeholder="Your Name"/>
-            <a className='btn' role='button'>Subscription</a>
+            <a className='btn' onClick={notify} role='button'>Subscription</a>
+            <Toaster />
           </div>
         </div>
       </div>

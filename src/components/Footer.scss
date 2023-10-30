@@ -25,6 +25,9 @@ footer {
     }
     &.mail {
       font-size: 15px;
+      display: block;
+      text-align: right;
+      margin: 0;
       &:hover {
         text-decoration: underline;
       }
