@@ -12,7 +12,7 @@ const Gallery = () => {
   })
   return (
     <div className="gallery">
-        <h2>Gallery</h2>
+        <h2>Gallery 🖼️</h2>
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide"><img src="https://images.unsplash.com/photo-1698267703889-06c41f9acba5" alt="" /></div>
           <div className="keen-slider__slide"><img src="https://images.unsplash.com/photo-1595842427698-2183e9f769d7" alt="" /></div>

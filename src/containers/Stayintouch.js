@@ -36,7 +36,7 @@ const Stayintouch = () => {
   return (
     <div className="stayintouch">
       <div className="container">
-        <h2>Stay In Touch</h2>
+        <h2>Stay In Touch 📧</h2>
         <p>Enter your email address to register to our newsletter subscription!</p>
         <div className="inner">
           <div className="col">
