@@ -4,9 +4,20 @@ import './Gallery.scss'
 
 const Gallery = () => {
   const [sliderRef, instanceRef] = useKeenSlider({
+    breakpoints: {
+      "(min-width: 400px)": {
+        slides: { perView: 3, spacing: 20 },
+      },
+      "(min-width: 1100px)": {
+        slides: { perView: 4, spacing: 20 },
+      },
+      "(min-width: 1680px)": {
+        slides: { perView: 5, spacing: 30 },
+      },
+    },
     loop: true,
     slides: {
-      perView: 4,
+      perView: 5,
       spacing: 30,
     }
   })
