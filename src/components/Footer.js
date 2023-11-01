@@ -17,14 +17,13 @@ const Footer = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <br />
-            <br />
             <small>© Nurkanat Doszhan, 2023</small>
           </div>
           <div className="col">
             <img className="logo" src="logow.webp" />
           </div>
           <div className="col">
-            <a className="mail" href="mailto:nurkanat.doszhan@gmail.com">nurkanat.doszhan@gmail.com</a>
+            <a className="mail" href="mailto:nurkanaat@gmail.com">nurkanaat@gmail.com</a>
           </div>
         </div>
       </div>
