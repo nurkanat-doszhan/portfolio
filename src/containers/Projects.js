@@ -40,6 +40,7 @@ const Projects = () => {
                   <p>Card Title</p>
                 </div>
               </div>
+              <a href="#" className='btn'>All projects</a>
             </div>
           </div>
         </div>
