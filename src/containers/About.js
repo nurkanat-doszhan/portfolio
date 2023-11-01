@@ -12,7 +12,11 @@ const About = () => {
             <a className="btn" href="#" role="button">Contact Me</a>
           </div>
           <div className="col">
-            <img src="/glenn-carstens-peters.webp" alt="" />
+            {
+              [19].map((element, value) => { return (
+                <img key={value} src={`/about/${Math.floor(Math.random() * element)}.png`} alt="" />
+              )})
+            }
           </div>
         </div>
       </div>
