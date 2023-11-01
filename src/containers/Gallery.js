@@ -6,7 +6,7 @@ const Gallery = () => {
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     slides: {
-      perView: 3,
+      perView: 4,
       spacing: 30,
     }
   })
@@ -14,12 +14,12 @@ const Gallery = () => {
     <div className="gallery">
         <h2>Gallery 🖼️</h2>
         <div ref={sliderRef} className="keen-slider">
-          <div className="keen-slider__slide"><img src="https://images.unsplash.com/photo-1698267703889-06c41f9acba5" alt="" /></div>
-          <div className="keen-slider__slide"><img src="https://images.unsplash.com/photo-1595842427698-2183e9f769d7" alt="" /></div>
-          <div className="keen-slider__slide"><img src="https://images.unsplash.com/photo-1650895327171-9145b2f173a0" alt="" /></div>
-          <div className="keen-slider__slide"><img src="https://images.unsplash.com/photo-1696860740793-1bb7bf33cdc1" alt="" /></div>
-          <div className="keen-slider__slide"><img src="https://images.unsplash.com/photo-1664511403128-f4a0d04c90e1" alt="" /></div>
-          <div className="keen-slider__slide"><img src="https://images.unsplash.com/photo-1697464207511-950c9a753822" alt="" /></div>
+          <div className="keen-slider__slide"><img src="/gallery/Leonardo_Diffusion_Dramatic_Tonalism_Cinematic_young_man_and_y_3.jpg" alt="" /></div>
+          <div className="keen-slider__slide"><img src="/gallery/Sketch_Graphic-Novel_EP-U1k-pRDOSA86dTT9zKQ_Post-98828206.png" alt="" /></div>
+          <div className="keen-slider__slide"><img src="/gallery/Lo-Fi_Concept_Art_Landscape_V_r3ERLiiBDh1FZEm2g.png" alt="" /></div>
+          <div className="keen-slider__slide"><img src="/gallery/Realistic-SciFi-Conceptt2img_2_1698828265.png" alt="" /></div>
+          <div className="keen-slider__slide"><img src="/gallery/Leonardo_Diffusion_parting_rain_young_man_and_young_woman_man_3.jpg" alt="" /></div>
+          <div className="keen-slider__slide"><img src="/gallery/3D-Render-Style v1_IS4uX6yATvWlXC9Atmb1Iw_8828235.png" alt="" /></div>
         </div>
     </div>
   )
