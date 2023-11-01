@@ -13,8 +13,7 @@ const Quotes = () => {
       .then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => console.error('Error:', error));
- }, []);
- console.log(data)
+  }, []);
   return (
     <div className="quotes">
       <div className="container">
