@@ -1,0 +1,52 @@
+import './About.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
+import Stayintouch from '../containers/Stayintouch';
+
+
+const About = () => {
+  return (
+    <>
+      <div className="container">
+        <h2>About me</h2>
+        <div className="inner">
+          <div className="col">
+            <div className="flex">
+              <img src="/gallery/Leonardo_Diffusion_parting_rain_young_man_and_young_woman_man_3.jpg" alt="Me" />
+              <div className='text'>
+                <h3>Crafting innovative web solutions with passion and precision</h3>
+                <p>Hey there, I’m Nurkanat, a skilled web developer with an eye for aesthetics. I specialize in front-end development and UI/UX design, and my mission is to create immersive online experiences that captivate and engage. Whether you need a portfolio showcase, a project gallery, or a responsive layout, I have the skills and expertise to bring your vision to life.</p>
+                <br />
+                <p>Let’s talk with me.</p>
+                <p><b><a className="mail" href="mailto:nurkanaat@gmail.com">nurkanaat@gmail.com</a></b></p>
+                <p className='socicons'>
+                  <a href="https://instagram.com/nurkanaatt/" target="_blank">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                  <a href="https://github.com/nurkanat-doszhan/" target="_blank">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className='flex'>
+              <div className='text'>
+                <h3>My Services</h3>
+                <p>With a focus on web development, front-end development, and UI/UX design, I have the skills to elevate your online presence and captivate your audience. My services include portfolio showcase, project gallery, and responsive layout design, all tailored to your unique needs and preferences. Let’s work together to create a website that truly stands out.</p>
+                <a className='btn'>Download CV</a>
+              </div>
+              <div className='pbars'>
+                <progress id="file" data-label="HTML" max="100" value="70">70%</progress>
+                <progress id="file" data-label="CSS" max="100" value="50">50%</progress>
+                <progress id="file" data-label="JS" max="100" value="40">40%</progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Stayintouch />
+    </>
+  )
+}
+
+export default About

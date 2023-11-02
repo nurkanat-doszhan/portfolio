@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="inner">
           <div className="col">
-            <a href="https://instagram.com/nurkanatt" target="_blank">
+            <a href="https://instagram.com/nurkanaatt/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a href="https://github.com/nurkanat-doszhan/" target="_blank">
@@ -20,7 +20,7 @@ const Footer = () => {
             <small>© Nurkanat Doszhan, 2023</small>
           </div>
           <div className="col">
-            <img className="logo" src="logow.webp" />
+            <img className="logo" src="/logow.webp" />
           </div>
           <div className="col">
             <a className="mail" href="mailto:nurkanaat@gmail.com">nurkanaat@gmail.com</a>
