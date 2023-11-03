@@ -15,8 +15,21 @@
     li {
       a {
         padding: 13px 20px;
+        &:global.active {
+          position: relative;
+          font-weight: 500;
+          &::after {
+            content: '';
+            position: absolute;
+            background: #156F5B;
+            height: 2px;
+            width: 90%;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
       }
     }
   }
 }
-
