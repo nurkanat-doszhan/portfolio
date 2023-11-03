@@ -7,7 +7,7 @@ import Stayintouch from '../containers/Stayintouch';
 const About = () => {
   return (
     <>
-      <div className={app.container}>
+      <div className={`${app.container} ${style.container}`}>
         <h2>About me</h2>
         <div className={app.inner}>
           <div className={app.col}>

@@ -10,46 +10,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    input[type='email'], textarea {
-      box-sizing: border-box;
-      width: 400px;
-      font-family: "Poppins";
-      max-width: 400px;
-      max-height: 100px;
-      min-width: 400px;
-      border: 1px solid #999;
-      margin-bottom: 15px;
-      border-radius: 3px;
-      padding: 10px 15px;
-      font-size: 14px;
-      background-color: #f8f8f8;
-      outline-color: #156F5B;
-      &::placeholder {
-        color: #999;
-      }
-      &:focus, &:active {
-        background: #fff;
-      }
-    }
-    textarea {
-      &::-webkit-scrollbar {
-        width: 12px;
-      }
-      &::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      }
-      &::-webkit-scrollbar-thumb {
-        cursor: default;
-        background-color: #156F5B;
-        border-radius: 10px;
-      }
-    }
     a {
       width: fit-content;
       padding: 10px 20px;
