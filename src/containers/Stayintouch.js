@@ -1,4 +1,5 @@
-import './Stayintouch.scss'
+import app from "../App.module.scss";
+import style from "./Stayintouch.module.scss";
 // import toast, { Toaster } from 'react-hot-toast';
 
 // const notify = () => toast('Hello World', {
@@ -27,16 +28,16 @@ import './Stayintouch.scss'
 
 const Stayintouch = () => {
   return (
-    <div className="stayintouch">
-      <div className="container">
+    <div className={style.stayintouch}>
+      <div className={app.container}>
         <h2>Text me 📧</h2>
         <p>Enter your email address to register to our newsletter subscription!</p>
-        <div className="inner">
-          <div className="col">
+        <div className={app.inner}>
+          <div className={`${app.col} ${style.col}`}>
             <form action=''>
-              <input type="email" required placeholder="Your Email"/>
-              <textarea name="" required placeholder="Your Message" id="" cols="30" rows="10"></textarea>
-              <input className='btn' type="submit" value="Subscription" />
+              <input required type="email" placeholder="Your Email"/>
+              <textarea required name="" placeholder="Your Message" id="" cols="30" rows="10"></textarea>
+              <input className={app.btn} type="submit" value="Subscription" />
             </form>
             {/* <Toaster /> */}
           </div>

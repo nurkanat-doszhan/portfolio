@@ -1,47 +1,49 @@
-import './Projects.scss'
+import { useState } from "react";
+import app from "../App.module.scss";
+import style from "./Projects.module.scss";
 
 const Projects = () => {
+
+  const [card, setCard] = useState([
+    {
+      imgSrc: 'https://i.redd.it/b3esnz5ra34y.jpg',
+      text: 'Card Title'
+    },
+    {
+      imgSrc: 'https://i.redd.it/b3esnz5ra34y.jpg',
+      text: 'Card Title'
+    },
+    {
+      imgSrc: 'https://i.redd.it/b3esnz5ra34y.jpg',
+      text: 'Card Title'
+    },
+    {
+      imgSrc: 'https://i.redd.it/b3esnz5ra34y.jpg',
+      text: 'Card Title'
+    }
+  ])
+
   return (
-    <div className="projects">
-      <div className="container">
+    <div className={style.projects}>
+      <div className={app.container}>
         <h2>Portfolio 🚀</h2>
-        <div className="inner">
-          <div className="col">
-            <div className='cards_list'>
-              <div className="card">
-                <div className="card_image">
-                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt='' />
-                </div>
-                <div className="card_title title-white">
-                  <p>Card Title</p>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card_image">
-                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="" />
-                </div>
-                <div className="card_title title-white">
-                  <p>Card Title</p>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card_image">
-                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="" />
-                </div>
-                <div className="card_title title-white">
-                  <p>Card Title</p>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card_image">
-                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="" />
-                </div>
-                <div className="card_title title-white">
-                  <p>Card Title</p>
-                </div>
-              </div>
-              <a href="#" className='btn'>All projects</a>
+        <div className={app.inner}>
+          <div className={`${app.col} ${style.col}`}>
+            <div className={style.cards_list}>
+              { card.map((i, v) => {
+                return (
+                  <div key={v} className={style.card}>
+                    <div className={style.card_image}>
+                      <img src={i.imgSrc} alt='' />
+                    </div>
+                    <div className={`${style.card_title} ${style.title_white}`}>
+                      <p>{i.text}</p>
+                    </div>
+                  </div>
+                )
+              })}
             </div>
+              <a href="#" className={`${app.btn} ${style.btn}`}>All projects</a>
           </div>
         </div>
       </div>

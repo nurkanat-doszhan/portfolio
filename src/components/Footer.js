@@ -1,4 +1,5 @@
-import "./Footer.scss";
+import app from "../App.module.scss";
+import style from "./Footer.module.scss";
 // import the library
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -7,9 +8,9 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="container">
-        <div className="inner">
-          <div className="col">
+      <div className={app.container}>
+        <div className={app.inner}>
+          <div className={app.col}>
             <a href="https://instagram.com/nurkanaatt/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
@@ -19,11 +20,11 @@ const Footer = () => {
             <br />
             <small>© Nurkanat Doszhan, 2023</small>
           </div>
-          <div className="col">
-            <img className="logo" src="/logow.webp" />
+          <div className={app.col}>
+            <img className={style.logo} src="/logow.webp" />
           </div>
-          <div className="col">
-            <a className="mail" href="mailto:nurkanaat@gmail.com">nurkanaat@gmail.com</a>
+          <div className={app.col}>
+            <a className={style.mail} href="mailto:nurkanaat@gmail.com">nurkanaat@gmail.com</a>
           </div>
         </div>
       </div>

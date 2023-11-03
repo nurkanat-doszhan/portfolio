@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import './Quotes.scss'
+import app from "../App.module.scss";
+import style from "./Quotes.module.scss";
 
 const Quotes = () => {
   const [data, setData] = useState([]);
@@ -23,11 +24,11 @@ const Quotes = () => {
       .catch((error) => console.error('Error:', error));
   }, []);
   return (
-    <div className="quotes">
-      <div className="container">
+    <div className={style.quotes}>
+      <div className={app.container}>
         <h2>Random Quotes 📜</h2>
-        <div className="inner">
-          <div className="col">
+        <div className={app.inner}>
+          <div className={app.col}>
             {data.map((item, value) => (
               <p key={value}>{item.quote} - <br /><b>{item.author}</b></p>
             ))}
