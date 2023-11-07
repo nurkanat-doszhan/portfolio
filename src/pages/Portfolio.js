@@ -3,27 +3,34 @@ import app from '../App.module.scss';
 import style from './Portfolio.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom';
+import PassGenerator from './projects/PassGenerator';
 
 const Portfolio = () => {
   const [cards, setCards] = useState([
     {
+      href: '/portfolio/pass-generator',
       img: '/gallery/Leonardo_Diffusion_parting_rain_young_man_and_young_woman_man_3.jpg',
+      text: 'Password Generator'
+    },
+    {
+      href: '#',
+      img: '/gallery/3D-Render-Style v1_IS4uX6yATvWlXC9Atmb1Iw_8828235.png',
       text: 'Hangman Game'
     },
     {
-      img: '/gallery/Leonardo_Diffusion_parting_rain_young_man_and_young_woman_man_3.jpg',
+      href: '#',
+      img: '/gallery/Sketch_Graphic-Novel_EP-U1k-pRDOSA86dTT9zKQ_Post-98828206.png',
       text: 'Hangman Game'
     },
     {
-      img: '/gallery/Leonardo_Diffusion_parting_rain_young_man_and_young_woman_man_3.jpg',
+      href: '#',
+      img: '/gallery/Realistic-SciFi-Conceptt2img_2_1698828265.png',
       text: 'Hangman Game'
     },
     {
-      img: '/gallery/Leonardo_Diffusion_parting_rain_young_man_and_young_woman_man_3.jpg',
-      text: 'Hangman Game'
-    },
-    {
-      img: '/gallery/Leonardo_Diffusion_parting_rain_young_man_and_young_woman_man_3.jpg',
+      href: '#',
+      img: '/gallery/Lo-Fi_Concept_Art_Landscape_V_r3ERLiiBDh1FZEm2g.png',
       text: 'Hangman Game'
     },
   ])
@@ -37,7 +44,7 @@ const Portfolio = () => {
               {
                 cards.map((i, v) => {
                   return (
-                    <a key={v} className={style.card}>
+                    <NavLink key={v} to={i.href} className={style.card}>
                       <div className={style.img}>
                         <img src={i.img} />
                         <div className={style.play}>
@@ -47,7 +54,7 @@ const Portfolio = () => {
                       <div className={style.text}>
                         <h4>{i.text}</h4>
                       </div>
-                    </a>
+                    </NavLink>
                   )
                 })
               }
