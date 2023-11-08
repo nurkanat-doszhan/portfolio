@@ -18,7 +18,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <br />
-            <small>© Nurkanat Doszhan, 2023</small>
+            <small>© Nurkanat Doszhan, {new Date().getFullYear()}</small>
           </div>
           <div className={app.col}>
             <img className={style.logo} src="/logow.webp" />

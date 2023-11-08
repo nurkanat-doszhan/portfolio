@@ -15,9 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="portfolio" element={<Portfolio />}>
-          {/* <Route path={`/:postId`} element={<PassGenerator />} /> */}
-        </Route>
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path={`portfolio/:Id`} element={<PassGenerator />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer />
