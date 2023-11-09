@@ -7,7 +7,6 @@ body {
   }
   &::-webkit-scrollbar-thumb {
     background-color: #156F5B;
-    // outline: 1px solid slategrey;
     border-radius: 10px;
   }
   background: #eee;
@@ -45,7 +44,7 @@ form {
   align-items: center;
 }
 
-input[type='text'], input[type='email'], textarea {
+input[type='text'], input[type='email'], input[type='number'], textarea {
   box-sizing: border-box;
   width: 400px;
   font-family: "Poppins";

@@ -10,17 +10,19 @@ import PassGenerator from './pages/projects/PassGenerator';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path={`portfolio/:Id`} element={<PassGenerator />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
+    <>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path={`portfolio/:Id`} element={<PassGenerator />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

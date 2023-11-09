@@ -1,0 +1,13 @@
+@import url(../App.module.scss);
+@import url(Footer.module.scss);
+@import url(Navbar.module.scss);
+@import url(../containers/About.module.scss);
+@import url(../containers/Gallery.scss);
+@import url(../containers/Hero.module.scss);
+@import url(../containers/Projects.module.scss);
+@import url(../containers/Quotes.module.scss);
+@import url(../containers/Stayintouch.module.scss);
+@import url(../pages/About.module.scss);
+@import url(../pages/Contact.module.scss);
+@import url(../pages/Portfolio.module.scss);
+@import url(../pages/projects/PassGenerator.module.scss);

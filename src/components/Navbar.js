@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className={app.container}>
       <nav className={style.navbar}>
-        <img className={style.navbar_logo} src="/logo.webp" />
+        <a href="/"><img className={style.navbar_logo} src="/logo.webp" /></a>
         <ul>
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
