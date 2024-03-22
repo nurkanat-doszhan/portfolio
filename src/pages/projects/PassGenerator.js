@@ -1,10 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopy } from '@fortawesome/free-solid-svg-icons'
 import app from '../../App.module.scss';
 import style from '../projects/PassGenerator.module.scss';
 import { useState } from "react";
 
 const PassGenerator = () => {
   const [password, setPassword] = useState('');
-  const [passLength, setPassLength] = useState(8);
+  const [passLength, setPassLength] = useState(5);
   const [lc, setLc] = useState(false);
   const [uc, setUc] = useState(false);
   const [num, setNum] = useState(false);
@@ -24,13 +26,27 @@ const PassGenerator = () => {
     let regUc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let regNum = '0123456789';
     let regSc = '~!@#$%^&*()_+=-|.<>[]{}';
-    let empty = ''
+    let empty = '';
 
-    if (lc) { empty += regLc[Math.floor(Math.random() * regLc.length)]; }
-    if (uc) { empty += regUc[Math.floor(Math.random() * regUc.length)]; }
-    if (num) { empty += regNum[Math.floor(Math.random() * regNum.length)]; }
-    if (sc) { empty += regSc[Math.floor(Math.random() * regSc.length)]; }
-    setPassword(empty)
+    let symbols = []
+    if (lc) symbols.push(regLc);
+    if (uc) symbols.push(regUc);
+    if (num) symbols.push(regNum);
+    if (sc) symbols.push(regSc);
+    
+    const getRandom = () => {
+      let elem1;
+      let elem2;
+      for (let i = 0; i < passLength; i++) {
+        elem1 = Math.floor(Math.random() * symbols.length);
+        for (let k = 0; k < symbols[elem1].length; k++) {
+          elem2 = Math.floor(Math.random() * symbols[elem1].length)
+        }
+        empty += symbols[elem1][elem2]
+      }
+      setPassword(empty)
+    }
+    getRandom();
   }
   return (
     <>
@@ -39,10 +55,11 @@ const PassGenerator = () => {
         <div className={app.inner}>
           <div className={app.col}>
             <div className={style.flex}>
-              <div className={style.params}>
+              <div className={style.pass}>
                 <input type="text" id="length" name="length" value={password} disabled />
-                <input type="number" value={passLength} min={8} max={16} />
+                <span className={style.btnCopy}><FontAwesomeIcon icon={faCopy} /></span>
               </div>
+              <input type="number" defaultValue={passLength} min={5} max={20} onChange={e => setPassLength(e.target.value)} />
               <div className={style.params}>
                 <label htmlFor="lc" className={lc ? style.active : ''}>
                   <input id="lc" type="checkbox" checked={lc} readOnly onClick={() => toggleCheck('lc')}/> Lowercase

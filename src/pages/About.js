@@ -36,9 +36,10 @@ const About = () => {
                 <a className={app.btn}>Download CV</a>
               </div>
               <div className='pbars'>
-                <progress id="file" data-label="HTML" max="100" value="70">70%</progress>
-                <progress id="file" data-label="CSS" max="100" value="50">50%</progress>
-                <progress id="file" data-label="JS" max="100" value="40">40%</progress>
+                <progress id="file" data-label="HTML" max="100" value="88">70%</progress>
+                <progress id="file" data-label="CSS" max="100" value="72">50%</progress>
+                <progress id="file" data-label="JS" max="100" value="46">40%</progress>
+                <progress id="file" data-label="ReactJS" max="100" value="39">40%</progress>
               </div>
             </div>
           </div>

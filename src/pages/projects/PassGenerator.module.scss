@@ -10,6 +10,22 @@
     flex-flow: row wrap;
     justify-content: space-between;
   }
+  .pass {
+    position: relative;
+    margin-bottom: 15px;
+    input {
+      margin-bottom: 0;
+    }
+    .btnCopy {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      padding: 6px 11px;
+      cursor: pointer;
+      color: #156F5B;
+    }
+  }
   input[type="text"] {
     min-width: 100%;
   }

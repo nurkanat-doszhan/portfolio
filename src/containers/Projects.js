@@ -6,19 +6,19 @@ const Projects = () => {
 
   const [card, setCard] = useState([
     {
-      imgSrc: 'https://i.redd.it/b3esnz5ra34y.jpg',
+      imgSrc: 'portfolio/irakli-kurashvili-fin.jpg',
       text: 'Card Title'
     },
     {
-      imgSrc: 'https://i.redd.it/b3esnz5ra34y.jpg',
+      imgSrc: 'portfolio/leartes-studios-nyc01.jpg',
       text: 'Card Title'
     },
     {
-      imgSrc: 'https://i.redd.it/b3esnz5ra34y.jpg',
+      imgSrc: 'portfolio/matteo-bassini-japanstreet2.jpg',
       text: 'Card Title'
     },
     {
-      imgSrc: 'https://i.redd.it/b3esnz5ra34y.jpg',
+      imgSrc: 'portfolio/wai-kin-lam-av-silentmirrorii.jpg',
       text: 'Card Title'
     }
   ])
@@ -43,7 +43,7 @@ const Projects = () => {
                 )
               })}
             </div>
-              <a href="#" className={`${app.btn} ${style.btn}`}>All projects</a>
+              <a href="/portfolio" className={`${app.btn} ${style.btn}`}>All projects</a>
           </div>
         </div>
       </div>
