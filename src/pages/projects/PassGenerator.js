@@ -3,6 +3,7 @@ import { faCopy } from '@fortawesome/free-solid-svg-icons'
 import app from '../../App.module.scss';
 import style from '../projects/PassGenerator.module.scss';
 import { useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
 
 const PassGenerator = () => {
   const [password, setPassword] = useState('');
@@ -11,6 +12,7 @@ const PassGenerator = () => {
   const [uc, setUc] = useState(false);
   const [num, setNum] = useState(false);
   const [sc, setSc] = useState(false);
+  const [copyPass, setCopyPass] = useState(false);
 
   const toggleCheck = (ch) => {
     switch(ch) {
@@ -48,6 +50,17 @@ const PassGenerator = () => {
     }
     getRandom();
   }
+
+  const copyToClipboard = () => {
+    notifyCopy();
+    navigator.clipboard.writeText(password);
+  }
+
+  const notifyCopy = () => toast.success('Copied to clipboard!', {
+    duration: 1300,
+    position: 'top-center',
+  });
+
   return (
     <>
       <div className={`${app.container} ${style.container}`}>
@@ -57,7 +70,10 @@ const PassGenerator = () => {
             <div className={style.flex}>
               <div className={style.pass}>
                 <input type="text" id="length" name="length" value={password} disabled />
-                <span className={style.btnCopy}><FontAwesomeIcon icon={faCopy} /></span>
+                {
+                  password != '' &&
+                  <span className={style.btnCopy} onClick={copyToClipboard}><FontAwesomeIcon icon={faCopy} /></span>
+                }
               </div>
               <input type="number" defaultValue={passLength} min={5} max={20} onChange={e => setPassLength(e.target.value)} />
               <div className={style.params}>
@@ -77,6 +93,7 @@ const PassGenerator = () => {
               <button className={`${app.btn} ${style.btn}`} onClick={() => generatePassword()} disabled={ !lc && !uc && !num && !sc ? true : false }>Generate Password!</button>
             </div>
           </div>
+          <Toaster />
         </div>
       </div>
     </>
