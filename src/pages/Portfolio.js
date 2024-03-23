@@ -4,7 +4,6 @@ import style from './Portfolio.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
-import PassGenerator from './projects/PassGenerator';
 
 const Portfolio = () => {
   const [cards, setCards] = useState([
@@ -14,7 +13,7 @@ const Portfolio = () => {
       text: 'Password Generator'
     },
     {
-      href: '#',
+      href: '/portfolio/hangman-game',
       img: '/gallery/3D-Render-Style v1_IS4uX6yATvWlXC9Atmb1Iw_8828235.png',
       text: 'Hangman Game'
     },
@@ -28,11 +27,11 @@ const Portfolio = () => {
       img: '/gallery/Realistic-SciFi-Conceptt2img_2_1698828265.png',
       text: 'Hangman Game'
     },
-    {
+    /*{
       href: '#',
       img: '/gallery/Lo-Fi_Concept_Art_Landscape_V_r3ERLiiBDh1FZEm2g.png',
       text: 'Hangman Game'
-    },
+    },*/
   ])
   return (
     <>

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
-import app from '../../App.module.scss';
-import style from '../projects/PassGenerator.module.scss';
+import app from '../../../App.module.scss';
+import style from '../../projects/PassGenerator/PassGenerator.module.scss';
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 
