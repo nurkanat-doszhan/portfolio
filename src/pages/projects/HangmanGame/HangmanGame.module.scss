@@ -67,7 +67,7 @@
     width: 100px;
     height: 5px;
     top: 210px;
-    right: 24.7%;
+    right: 24.8%;
     transform: rotate(-65deg);
   }
   .rFoot {
@@ -85,7 +85,20 @@
   text-align: center;
 }
 .words {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  .letter {
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 4px solid #156F5B;
+    margin: 0 5px;
+    div {
+      visibility: hidden;
+    }
+  }
 }
 .keyboard {
   width: fit-content;
@@ -95,19 +108,28 @@
     border: none;
     -webkit-user-select: none;
     user-select: none;
-    background-color: #156F5B;
     color: #fff;
     margin: 4px;
     font-size: 35px;
     text-transform: uppercase;
+    border: 2px solid #156F5B;
+    border-radius: 6px;
+    color: #156F5B;
     width: 50px;
     height: 60px;
     display: inline-block;
     transition: all 0.3s;
     text-align: center;
-    border-radius: 3px;
+    &:disabled {
+      background-color: #156F5B;
+      color: #fff;
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
     &:hover {
-      background-color: #0e4d3f;
+      background-color: #156F5B;
+      color: #fff;
     }
   }
 }
