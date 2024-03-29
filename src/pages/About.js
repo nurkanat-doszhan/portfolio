@@ -20,10 +20,10 @@ const About = () => {
                 <p>Let’s talk with me.</p>
                 <p><b><a className={style.mail} href="mailto:nurkanaat@gmail.com">nurkanaat@gmail.com</a></b></p>
                 <p className={style.socicons}>
-                  <a href="https://instagram.com/nurkanaatt/" target="_blank" rel="noreferrer">
+                  <a href="https://github.com/nurkanat-doszhan/" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
-                  <a href="https://github.com/nurkanat-doszhan/" target="_blank" rel="noreferrer">
+                  <a href="https://instagram.com/nurkanaatt/" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </p>

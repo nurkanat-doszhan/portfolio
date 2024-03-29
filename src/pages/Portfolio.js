@@ -13,9 +13,9 @@ const Portfolio = () => {
       text: 'Password Generator'
     },
     {
-      href: '/portfolio/hangman-game',
+      href: '/portfolio/schulte-table',
       img: '/gallery/3D-Render-Style v1_IS4uX6yATvWlXC9Atmb1Iw_8828235.png',
-      text: 'Hangman Game'
+      text: 'Schulte Table'
     },
     {
       href: '#',

@@ -7,7 +7,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import PassGenerator from './pages/projects/PassGenerator/PassGenerator';
-import HangmanGame from './pages/projects/HangmanGame/HangmanGame';
+import SchulteTable from './pages/projects/SchulteTable/SchulteTable';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           {/* <Route path={`portfolio/:Id`} element={<PassGenerator />} /> */}
           {/* <Route path={`portfolio/:Id`} element={<HangmanGame />} /> */}
           <Route path={`portfolio/pass-generator`} element={<PassGenerator />} />
-          <Route path={`portfolio/hangman-game`} element={<HangmanGame />} />
+          <Route path={`portfolio/schulte-table`} element={<SchulteTable />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
