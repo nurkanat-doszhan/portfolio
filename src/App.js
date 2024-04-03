@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import PassGenerator from './pages/projects/PassGenerator/PassGenerator';
 import SchulteTable from './pages/projects/SchulteTable/SchulteTable';
+import Todo from './pages/projects/Todo/Todo';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           {/* <Route path={`portfolio/:Id`} element={<HangmanGame />} /> */}
           <Route path={`portfolio/pass-generator`} element={<PassGenerator />} />
           <Route path={`portfolio/schulte-table`} element={<SchulteTable />} />
+          <Route path={`portfolio/todo-list`} element={<Todo />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
       </div>

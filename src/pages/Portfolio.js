@@ -18,9 +18,9 @@ const Portfolio = () => {
       text: 'Schulte Table'
     },
     {
-      href: '#',
+      href: '/portfolio/todo-list',
       img: '/gallery/Sketch_Graphic-Novel_EP-U1k-pRDOSA86dTT9zKQ_Post-98828206.png',
-      text: 'Hangman Game'
+      text: 'To-do list'
     },
     {
       href: '#',

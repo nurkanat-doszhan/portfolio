@@ -114,4 +114,8 @@ h2 {
   transition: all .3s;
   text-align: center;
   border-radius: 3px;
+  &:disabled {
+    background-color: #ccc;
+    cursor: default;
+  }
 }
