@@ -1,21 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import app from '../../../App.module.scss';
 import style from '../../projects/Todo/Todo.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPencil, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { customAlphabet } from 'nanoid';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 
 const Todo = () => {
   const [val, setVal] = useState('')
-  const [isEdit, setIsEdit] = useState(false)
   const [list, setList] = useState([
     { name: 'List item 1', id: 'id1', dateTime: '18:15:46 30.03.2024' },
     { name: 'List item 2', id: 'id2', dateTime: '18:17:47 30.03.2024' },
   ])
-  
-  // localStorage.setItem('list', list);
-  // console.log(list.length);
 
   let full = () => {
     let d = new Date();
@@ -60,15 +56,6 @@ const Todo = () => {
     setList(list.filter(item => list[v].id !== item.id));
   }
 
-  let editItem = (name) => {
-    setIsEdit(true)
-    setVal(name)
-  }
-
-  let updateItem = () => {
-    
-  }
-
   return (
     <>
       <div className={`${app.container} ${style.container}`}>
@@ -76,7 +63,7 @@ const Todo = () => {
         <div className={`${app.inner} ${style.inner}`}>
           <div className={`${app.col} ${style.col}`}>
             <input required type='text' value={val ?? ''} onChange={inputChange} placeholder="Add note" />
-            <button disabled={ val === '' ? true : false } onClick={() => isEdit ? updateItem() : addItem()} className={`${app.btn} ${style.btn}`}>{isEdit ? 'Update' : 'Add'}</button>
+            <button disabled={ val === '' ? true : false } onClick={() => addItem()} className={`${app.btn} ${style.btn}`}>Add</button>
           </div>
         </div>
         <div className={`${app.inner} ${style.inner}`}>
@@ -93,10 +80,10 @@ const Todo = () => {
                               <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} className={style.item}>
                                 <div className={style.flex}>
                                   <span>{ i.name }</span>
-                                  <div className={style.edit} onClick={() => editItem(i.name)}>
-                                    <span className={style.pencil}>
+                                  <div className={style.edit}>
+                                    {/* <span className={style.pencil}>
                                       <FontAwesomeIcon icon={faPencil} />
-                                    </span>
+                                    </span> */}
                                     <span className={style.trash} onClick={() => {deleteItem(i, v)}}>
                                       <FontAwesomeIcon icon={faTrash} />
                                     </span>

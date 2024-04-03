@@ -14,7 +14,7 @@
     .todo {
       user-select: none;
       margin-top: 15px;
-      width: 480px;
+      width: 490px;
       .item {
         padding: 10px 15px;
         border-radius: 6px;
@@ -30,6 +30,8 @@
           .edit {
             width: 42px;
             margin-left: 10px;
+            display: flex;
+            justify-content: end;
             .pencil {
               margin-right: 8px;
               cursor: pointer;
