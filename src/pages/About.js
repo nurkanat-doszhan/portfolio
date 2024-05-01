@@ -42,6 +42,9 @@ const About = () => {
                 <progress id="file" data-label="ReactJS" max="100" value="39">40%</progress>
               </div>
             </div>
+            <div className={style.flex}>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKlUpmZwsyw?si=FMz0-n9mIyfk8v33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
