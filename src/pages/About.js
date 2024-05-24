@@ -3,6 +3,7 @@ import style from './About.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 import Stayintouch from '../containers/Stayintouch';
+import { useState } from 'react';
 
 const About = () => {
   return (
@@ -42,8 +43,9 @@ const About = () => {
                 <progress id="file" data-label="ReactJS" max="100" value="39">40%</progress>
               </div>
             </div>
-            <div className={style.flex}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKlUpmZwsyw?si=FMz0-n9mIyfk8v33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div className={style.videoMusic}>
+              <iframe frameborder="0" style={{ border: 'none', width: '50%', height: '315px' }} width="100%" height="315" src="https://music.yandex.kz/iframe/playlist/nurkanat.doszhan/1032">Слушайте <a href='https://music.yandex.kz/users/nurkanat.doszhan/playlists/1032'>Hardcore training</a> — <a href='https://music.yandex.kz/users/nurkanat.doszhan'>Нурканат Досжан</a> на Яндекс Музыке</iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/qKlUpmZwsyw?si=FMz0-n9mIyfk8v33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>
