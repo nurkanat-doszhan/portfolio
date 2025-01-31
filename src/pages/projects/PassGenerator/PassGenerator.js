@@ -68,6 +68,7 @@ const PassGenerator = () => {
         <div className={app.inner}>
           <div className={app.col}>
             <div className={style.flex}>
+              <span>Your password:</span>
               <div className={style.pass}>
                 <input type="text" id="length" name="length" value={password} disabled />
                 {
@@ -75,6 +76,7 @@ const PassGenerator = () => {
                   <span className={style.btnCopy} onClick={copyToClipboard}><FontAwesomeIcon icon={faCopy} /></span>
                 }
               </div>
+              <span>Number of characters in the password:</span>
               <input type="number" defaultValue={passLength} min={5} max={20} onChange={e => setPassLength(e.target.value)} />
               <div className={style.params}>
                 <label htmlFor="lc" className={lc ? style.active : ''}>

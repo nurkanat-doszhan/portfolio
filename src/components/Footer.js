@@ -11,9 +11,9 @@ const Footer = () => {
       <div className={app.container}>
         <div className={app.inner}>
           <div className={app.col}>
-            <a href="https://instagram.com/nurkanaatt/" target="_blank">
+            {/* <a href="https://instagram.com/nurkanaatt/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} />
-            </a>
+            </a> */}
             <a href="https://github.com/nurkanat-doszhan/" target="_blank">
               <FontAwesomeIcon icon={faGithub} />
             </a>

@@ -24,9 +24,9 @@ const About = () => {
                   <a href="https://github.com/nurkanat-doszhan/" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
-                  <a href="https://instagram.com/nurkanaatt/" target="_blank" rel="noreferrer">
+                  {/* <a href="https://instagram.com/nurkanaatt/" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} />
-                  </a>
+                  </a> */}
                 </p>
               </div>
             </div>
@@ -44,8 +44,8 @@ const About = () => {
               </div>
             </div>
             <div className={style.videoMusic}>
-              <iframe frameborder="0" style={{ border: 'none', width: '50%', height: '315px' }} width="100%" height="315" src="https://music.yandex.kz/iframe/playlist/nurkanat.doszhan/1032">Слушайте <a href='https://music.yandex.kz/users/nurkanat.doszhan/playlists/1032'>Hardcore training</a> — <a href='https://music.yandex.kz/users/nurkanat.doszhan'>Нурканат Досжан</a> на Яндекс Музыке</iframe>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/qKlUpmZwsyw?si=FMz0-n9mIyfk8v33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe frameBorder="0" style={{ border: 'none', width: '50%', height: '315px' }} width="100%" height="315" src="https://music.yandex.kz/iframe/playlist/nurkanat.doszhan/1032">Слушайте <a href='https://music.yandex.kz/users/nurkanat.doszhan/playlists/1032'>Hardcore training</a> — <a href='https://music.yandex.kz/users/nurkanat.doszhan'>Нурканат Досжан</a> на Яндекс Музыке</iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/qKlUpmZwsyw?si=FMz0-n9mIyfk8v33" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
           </div>
         </div>

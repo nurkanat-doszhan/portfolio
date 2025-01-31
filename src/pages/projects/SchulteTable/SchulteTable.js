@@ -20,15 +20,13 @@ const Game = () => {
   shuffle(matrix);
 
   let randomColor = x => {
-    let result = Math.floor(Math.random() * x);
-    return result
+    return Math.floor(Math.random() * x);
   }
 
   const btnClick = x => {
     let i = Number(x);
     if(i == currentNumber) {
       setCurrentNumber(currentNumber + 1);
-      
     } if (i == 25) {
       Swal.fire({
         title: 'Good job!',

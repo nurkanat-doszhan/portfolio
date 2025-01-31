@@ -2,15 +2,16 @@ import { useState } from 'react';
 import app from '../../../App.module.scss';
 import style from '../../projects/Todo/Todo.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faPencil } from '@fortawesome/free-solid-svg-icons';
 import { customAlphabet } from 'nanoid';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Todo = () => {
   const [val, setVal] = useState('')
   const [list, setList] = useState([
-    { name: 'List item 1', id: 'id1', dateTime: '18:15:46 30.03.2024' },
-    { name: 'List item 2', id: 'id2', dateTime: '18:17:47 30.03.2024' },
+    { name: 'List item 1', id: 'id1', dateTime: '12:15:46 05.01.2025' },
+    { name: 'List item 2', id: 'id2', dateTime: '12:17:47 05.01.2025' },
   ])
 
   let full = () => {
@@ -52,6 +53,15 @@ const Todo = () => {
     setList(items);
   }
 
+  const notifyCopy = () => toast.error('We are working on improving 😉', {
+    duration: 2500,
+    position: 'top-center',
+  })
+
+  let editItem = (i, v) => {
+    notifyCopy();
+  }
+
   let deleteItem = (i, v) => {
     setList(list.filter(item => list[v].id !== item.id));
   }
@@ -59,6 +69,7 @@ const Todo = () => {
   return (
     <>
       <div className={`${app.container} ${style.container}`}>
+        <Toaster />
         <h2>Todo list</h2>
         <div className={`${app.inner} ${style.inner}`}>
           <div className={`${app.col} ${style.col}`}>
@@ -81,9 +92,9 @@ const Todo = () => {
                                 <div className={style.flex}>
                                   <span>{ i.name }</span>
                                   <div className={style.edit}>
-                                    {/* <span className={style.pencil}>
+                                    <span className={style.pencil} onClick={() => {editItem(i, v)}}>
                                       <FontAwesomeIcon icon={faPencil} />
-                                    </span> */}
+                                    </span>
                                     <span className={style.trash} onClick={() => {deleteItem(i, v)}}>
                                       <FontAwesomeIcon icon={faTrash} />
                                     </span>

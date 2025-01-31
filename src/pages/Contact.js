@@ -17,11 +17,11 @@ const Contact = () => {
             <div className={style.flex}>
               <div className={style.card}>
                 <FontAwesomeIcon icon={faMobileScreenButton} size="2xl" />
-                <p>+935783023</p>
+                <p>+7 7** *** ** **</p>
               </div>
               <div className={style.card}>
                 <FontAwesomeIcon icon={faBuilding} size="2xl" />
-                <p>Rosemaed, UK 91117</p>
+                <p>Kazakhstan</p>
               </div>
               <div className={style.card}>
                 <FontAwesomeIcon icon={faEnvelope} size="2xl" />
@@ -42,9 +42,9 @@ const Contact = () => {
                   Shoot me an email or give me a call,
                   and let’s make something great!</p>
                 <p className={style.cardSocIcons}>
-                  <a href="https://instagram.com/nurkanaatt/" target="_blank">
+                  {/* <a href="https://instagram.com/nurkanaatt/" target="_blank">
                     <FontAwesomeIcon icon={faInstagram} size="xl" />
-                  </a>
+                  </a> */}
                   <a href="https://github.com/nurkanat-doszhan/" target="_blank">
                     <FontAwesomeIcon icon={faGithub} size="xl" />
                   </a>
